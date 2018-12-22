@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3380218063
+    locked: 0
+  - name: I screwed up the sprite
+    uniqueID: 3461915281
+    locked: 0
+  - name: Ground
+    uniqueID: 3180408297
+    locked: 0
+  - name: Player
+    uniqueID: 414605561
+    locked: 0
