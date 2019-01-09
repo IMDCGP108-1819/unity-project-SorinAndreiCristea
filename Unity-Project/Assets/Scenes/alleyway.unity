@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 629924013}
   - component: {fileID: 629924015}
   m_Layer: 0
-  m_Name: MJ STage_0
+  m_Name: Alleyway Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 998375068}
   - component: {fileID: 998375067}
   m_Layer: 0
-  m_Name: MJ Stage Sky
+  m_Name: Alleyway Stage Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 1533098467}
   - component: {fileID: 1533098466}
   m_Layer: 0
-  m_Name: MJ STage_0 (1)
+  m_Name: Alleyway Stage (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 1927230212}
   - component: {fileID: 1927230211}
   m_Layer: 0
-  m_Name: MJ Stage Sky (1)
+  m_Name: Alleyway Stage Sky (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
