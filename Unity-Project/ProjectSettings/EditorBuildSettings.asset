@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/main_menu.unity
+    guid: cdb7a17a191329a48805b84cdc834199
+  - enabled: 1
+    path: Assets/Scenes/select_fighter.unity
+    guid: 5d45824cd80b85745b0869ec80cc59ab
+  - enabled: 1
     path: Assets/Scenes/select_stage.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/alleyway.unity
+    guid: 65aa616a3f3ad254fa307a48a9adeb7f
+  - enabled: 1
+    path: Assets/Scenes/parking_lot.unity
+    guid: eb797d95c26294942b50969920778d2f
+  - enabled: 1
+    path: Assets/Scenes/instructions.unity
+    guid: 76048f2516f7fda46b35b699b7d8e7f8
   m_configObjects: {}
