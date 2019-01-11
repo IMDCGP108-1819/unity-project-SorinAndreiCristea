@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 28a622d2fb591ad4bba1aa237abe8223
+guid: c7085a9bf3f7bc64bb484e0b4d9e6208
 TextureImporter:
   fileIDToRecycleName:
-    21300000: jeans_heavy_0
-    21300002: jeans_heavy_1
-    21300004: jeans_heavy_2
+    21300000: heart_0
+    21300002: heart_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -34,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -120,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jeans_heavy_0
+      name: heart_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,39 +133,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1a83ac2bdcae8a409a3c3dc0d383401
+      spriteID: 85114a68881dae24d9e76fc83d89f13a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jeans_heavy_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac39e27a30c418a41bf77407ac628320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jeans_heavy_2
+      name: heart_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +153,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d28c776b0d3fd84d8b398d1fc9b7438
+      spriteID: 671f12b7cd79bef44a0f74bafd853467
       vertices: []
       indices: 
       edges: []
@@ -182,7 +161,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1febc577cf2811346b988f513cbe795f
+    spriteID: a9bb637938ebb1f45917c0d09948ae64
     vertices: []
     indices: 
     edges: []

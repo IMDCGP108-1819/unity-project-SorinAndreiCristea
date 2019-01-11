@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerJeans : MonoBehaviour
 {
     public float moveSpeed;
 
@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D player_rigidbody;
     private bool light = false;
     private bool heavy = false;
-
 
     // Start is called before the first frame update
     void Start()
@@ -23,13 +22,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
             //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-            player_rigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed , player_rigidbody.velocity.y);
+            player_rigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, player_rigidbody.velocity.y);
         }
 
-        if(Input.GetAxisRaw("Horizontal")<0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
+        if (Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
         {
             player_rigidbody.velocity = new Vector2(0f, player_rigidbody.velocity.y);
         }
@@ -39,6 +38,7 @@ public class PlayerController : MonoBehaviour
         HandleInput();
         HandleAttacks();
         ResetValues();
+
 
 
     }
@@ -70,4 +70,6 @@ public class PlayerController : MonoBehaviour
         light = false;
         heavy = false;
     }
+
 }
+

@@ -24,4 +24,8 @@ public class SceneSelection : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void parking_lot ()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
