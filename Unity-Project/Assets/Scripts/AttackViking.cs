@@ -21,8 +21,9 @@ public class AttackViking : MonoBehaviour
             if (Input.GetKey(KeyCode.O) || Input.GetKey(KeyCode.P))
             {
                
-                Physics2D.OverlapCircleAll(attack_pos.position, attack_range, enemy);
-                GameObject.Find("jeans").GetComponent<healthJeans>().health -= damage;
+                Collider2D[] enemies = Physics2D.OverlapCircleAll(attack_pos.position, attack_range, enemy);
+                for (int i = 0; i < enemies.Length; i++)
+                enemies[i].GetComponent<healthJeans>().health -= damage;
             }
             attack_time = start_attack_time;
         }
