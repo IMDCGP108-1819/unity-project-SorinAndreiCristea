@@ -24,7 +24,9 @@ public class PlayerControllerJeans : MonoBehaviour
     {
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
+            // Initially used the animator for movement, then switched to rigidbody
             //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+         
             player_rigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, player_rigidbody.velocity.y);
         }
 
@@ -45,6 +47,7 @@ public class PlayerControllerJeans : MonoBehaviour
 
     private void HandleAttacks()
     {
+        //If player inputs are detected executes animations
         if (light)
         {
             anim.SetTrigger("light");
@@ -56,6 +59,7 @@ public class PlayerControllerJeans : MonoBehaviour
     }
     private void HandleInput()
     {
+        //Checks for player inputs
         if (Input.GetKeyDown(KeyCode.O))
         {
             light = true;
@@ -67,6 +71,7 @@ public class PlayerControllerJeans : MonoBehaviour
     }
     private void ResetValues()
     {
+        //Resets values so animations don't loop infinitely
         light = false;
         heavy = false;
     }

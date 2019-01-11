@@ -14,10 +14,13 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Stop the player from spamming attack or 
         if(attack_time <= 0)
         {
+            //Checks if the player is attacking
             if (Input.GetKey(KeyCode.O) || Input.GetKey(KeyCode.P))
             {
+                //Creates a circuar area in front of the player, checks for any overlapping colliders and deals damage if any. For some reason both players are getting damaged ever though I'm using different scripts for both attack and health
                 Physics2D.OverlapCircleAll(attack_pos.position, attack_range, enemy);
                 GameObject.Find("viking").GetComponent<Health>().health -= damage;
             }
@@ -31,6 +34,7 @@ public class Attack : MonoBehaviour
         }
        
     }
+    //Visual representation of damage area
      void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

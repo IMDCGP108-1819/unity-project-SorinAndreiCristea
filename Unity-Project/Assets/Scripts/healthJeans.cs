@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class healthJeans : MonoBehaviour
 {
+    //Same script as Health but for the jeans
     public int health;
     public int number_of_hearts;
 

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CharacterSelection : MonoBehaviour
 {
     static public bool viking_chosen = true;
+    //Sets a static value to signal which character the player chooses
 
     public void jeans_chosen()
     {
@@ -15,6 +16,7 @@ public class CharacterSelection : MonoBehaviour
 
     private void Awake()
     {
+        //Turns off the controller script of the unchosen character when entering the stage. I'd replace it with an AI but I can't wrap my head around State Machine Behaviours
         if (viking_chosen == false)
             GameObject.Find("viking").GetComponent<PlayerController>().enabled = false;
         else

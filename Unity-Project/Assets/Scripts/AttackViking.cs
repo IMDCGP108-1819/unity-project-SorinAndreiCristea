@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AttackViking : MonoBehaviour
 {
+    //Same script as Attack 
+
     private float attack_time;
     public float start_attack_time;
     public Transform attack_pos;
@@ -18,6 +20,7 @@ public class AttackViking : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.O) || Input.GetKey(KeyCode.P))
             {
+               
                 Physics2D.OverlapCircleAll(attack_pos.position, attack_range, enemy);
                 GameObject.Find("jeans").GetComponent<healthJeans>().health -= damage;
             }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Same script as PlayerControllerJeans but for the Viking
     public float moveSpeed;
 
     private Animator anim;

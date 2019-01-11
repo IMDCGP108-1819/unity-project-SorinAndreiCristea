@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSelection : MonoBehaviour
 {
+    // Assign stages or menus to different buttons
    public void PlayGame ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

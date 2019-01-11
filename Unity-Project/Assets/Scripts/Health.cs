@@ -17,12 +17,14 @@ public class Health : MonoBehaviour
     {
         if (health > number_of_hearts)
         {
+            //Makes sure health doesn't exceeed a set maximum
             health = number_of_hearts;
         }
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < health)
             {
+                // Changes the sprite from the full heart to the empty one 
                 hearts[i].sprite = full;
             }
             else
@@ -31,6 +33,7 @@ public class Health : MonoBehaviour
             }
             if (i < number_of_hearts)
             {
+                // Disables excess hearts
                 hearts[i].enabled = true;
             }
             else
@@ -40,6 +43,7 @@ public class Health : MonoBehaviour
         }
         if (health == 0)
         {
+            //If a fighter dies the player is returned to the main menu screen, which would be great if they didn't both take damage at the same time
             SceneManager.LoadScene(0);
         }
 
